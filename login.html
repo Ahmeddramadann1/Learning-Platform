@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Learning Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="account-page">
+
+        <header class="account-header">
+            <p class="platform-name">Learning Platform</p>
+            <p class="platform-description">
+                Your journey to knowledge starts here.
+            </p>
+        </header>
+
+        <section class="account-card">
+
+            <div class="account-intro">
+                <h1>Welcome Back!</h1>
+                <p>Log in to continue your learning journey.</p>
+            </div>
+
+            <form action="/login" method="POST" id="loginForm">
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required>
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="toggle-password">
+                            Show
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="login-button">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="account-footer">
+                <p class="account-link">
+                    Don't have an account?
+                    <a href="register.html">Create an account</a>
+                </p>
+            </div>
+
+        </section>
+
+        <footer class="page-footer">
+            <p>© 2026 Learning Platform. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        const passwordInput = document.getElementById("password");
+        const togglePassword = document.getElementById("togglePassword");
+
+        togglePassword.addEventListener("click", function () {
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                togglePassword.textContent = "Hide";
+            } else {
+                passwordInput.type = "password";
+                togglePassword.textContent = "Show";
+            }
+
+        });
+    </script>
+
+</body>
+</html>

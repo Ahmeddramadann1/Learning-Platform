@@ -1,0 +1,221 @@
+
+/* ===== General Styles ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background-color: #EDF4F3;
+    color: #173C3C;
+    min-height: 100vh;
+}
+
+/* ===== Main Page ===== */
+
+.account-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* ===== Header ===== */
+
+.account-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.platform-name {
+    font-size: 30px;
+    font-weight: 700;
+    color: #18685D;
+    letter-spacing: 0.5px;
+}
+
+.platform-description {
+    color: #486562;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+/* ===== Login Card ===== */
+
+.account-card {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 420px;
+    padding: 38px;
+    border: 1px solid #D6E3E0;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(23, 60, 60, 0.08);
+}
+
+/* ===== Card Introduction ===== */
+
+.account-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.account-intro h1 {
+    font-size: 28px;
+    color: #173C3C;
+    margin-bottom: 10px;
+}
+
+.account-intro p {
+    font-size: 14px;
+    color: #486562;
+}
+
+/* ===== Form ===== */
+
+.account-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #173C3C;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #94AAA7;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-family: inherit;
+    color: #173C3C;
+    transition: 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #94AAA7;
+}
+
+.form-group input:focus {
+    outline: 2px solid #18685D;
+    outline-offset: 1px;
+    border-color: #18685D;
+}
+
+/* ===== Password Field ===== */
+
+.password-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.password-wrapper input {
+    flex: 1;
+    min-width: 0;
+}
+
+.toggle-password {
+    padding: 12px 10px;
+    background-color: #EDF4F3;
+    color: #18685D;
+    border: 1px solid #D6E3E0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    width: auto;
+}
+
+.toggle-password:hover {
+    background-color: #D6E3E0;
+}
+
+/* ===== Login Button ===== */
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    background-color: #18685D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #104E46;
+    transform: translateY(-2px);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+/* ===== Account Footer ===== */
+
+.account-footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.account-link {
+    color: #486562;
+    font-size: 14px;
+}
+
+.account-link a {
+    color: #145E55;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.account-link a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Page Footer ===== */
+
+.page-footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #486562;
+    font-size: 12px;
+}
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 480px) {
+
+    .account-card {
+        padding: 25px 20px;
+    }
+
+    .platform-name {
+        font-size: 26px;
+    }
+
+    .account-intro h1 {
+        font-size: 24px;
+    }
+
+}
